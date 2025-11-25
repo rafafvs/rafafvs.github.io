@@ -1,6 +1,9 @@
 // src/components/NavBar.js
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
+import cvPdf from '../assets/files/RafaelValenteCV.pdf';
+
+const SECTION_IDS = ['home', 'education', 'experience', 'extracurricular', 'skills', 'projects', 'contact'];
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -8,21 +11,59 @@ export const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
+    let sectionPositions = [];
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const collectSectionPositions = () => {
+      sectionPositions = SECTION_IDS.map((id) => {
+        const element = document.getElementById(id);
+        return element
+          ? { id, offsetTop: element.offsetTop }
+          : null;
+      })
+        .filter(Boolean)
+        .sort((a, b) => a.offsetTop - b.offsetTop);
+    };
+
+    const updateActiveSection = () => {
+      const hasScrolled = window.scrollY > 50;
+      setScrolled((prev) => (prev === hasScrolled ? prev : hasScrolled));
+
+      if (!sectionPositions.length) {
+        collectSectionPositions();
+      }
+
+      const referencePoint = window.scrollY + 140;
+      let currentSection = SECTION_IDS[0];
+
+      for (const section of sectionPositions) {
+        if (referencePoint >= section.offsetTop) {
+          currentSection = section.id;
+        } else {
+          break;
+        }
+      }
+
+      setActiveLink((prev) => (prev === currentSection ? prev : currentSection));
+    };
+
+    const handleResize = () => {
+      collectSectionPositions();
+      updateActiveSection();
+    };
+
+    collectSectionPositions();
+    updateActiveSection();
+
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const closeMenu = () => setExpanded(false);
-
-  const onUpdateActiveLink = (value) => setActiveLink(value);
 
   return (
     <Navbar expand="lg" fixed="top" expanded={expanded} className={scrolled ? 'scrolled' : ''}>
@@ -42,21 +83,65 @@ export const NavBar = () => {
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" onClick={() => onUpdateActiveLink('home')} className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>
+            <Nav.Link
+              href="#home"
+              onClick={closeMenu}
+              active={activeLink === 'home'}
+              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
+            >
                 Home
             </Nav.Link>
-            <Nav.Link href="#projects" onClick={() => onUpdateActiveLink('projects')} className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}>
-                Projects
+            <Nav.Link
+              href="#education"
+              onClick={closeMenu}
+              active={activeLink === 'education'}
+              className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'}
+            >
+                Education
             </Nav.Link>
-            <Nav.Link href="#experience" onClick={() => onUpdateActiveLink('experience')} className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}>
+            <Nav.Link
+              href="#experience"
+              onClick={closeMenu}
+              active={activeLink === 'experience'}
+              className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
+            >
                 Experience
             </Nav.Link>
-            <Nav.Link href="#skills" onClick={() => onUpdateActiveLink('skills')} className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}>
+            <Nav.Link
+              href="#extracurricular"
+              onClick={closeMenu}
+              active={activeLink === 'extracurricular'}
+              className={activeLink === 'extracurricular' ? 'active navbar-link' : 'navbar-link'}
+            >
+                Extracurricular
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              onClick={closeMenu}
+              active={activeLink === 'skills'}
+              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
+            >
                 Skills
             </Nav.Link>
-            <Nav.Link href="#contacts" onClick={() => onUpdateActiveLink('contacts')} className={activeLink === 'contacts' ? 'active navbar-link' : 'navbar-link'}>
-                Contacts
+            <Nav.Link
+              href="#projects"
+              onClick={closeMenu}
+              active={activeLink === 'projects'}
+              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
+            >
+                Projects
             </Nav.Link>
+            <Nav.Link
+              href="#contact"
+              onClick={closeMenu}
+              active={activeLink === 'contact'}
+              className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
+            >
+                Contact
+            </Nav.Link>
+            <Button as="a" href={cvPdf} download="RafaelValenteCV.pdf" variant="primary" className="ms-3">
+              Download CV
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

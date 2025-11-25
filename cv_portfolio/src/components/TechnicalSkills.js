@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { Section } from "./Section";
 
 export const TechnicalSkills = () => {
@@ -61,66 +60,32 @@ export const TechnicalSkills = () => {
   ];
 
   return (
-    <Section id="skills" title="TECHNICAL SKILLS" bgColor="dark">
-      {skillCategories.map((category, categoryIndex) => (
-        <div key={categoryIndex} className="skill-category">
-          <h3 className="category-title">{category.name}</h3>
-          <Row>
-            <Col lg={6}>
-              <div className="skills-column">
-                {category.skills.slice(0, Math.ceil(category.skills.length / 2)).map((skill, index) => (
-                  <div key={index} className="skill-item">
-                    <div className="skill-header">
-                      <span className="skill-icon" style={{ backgroundColor: skill.color }}>
-                        {skill.icon}
-                      </span>
-                      <span className="skill-name">{skill.name}</span>
-                    </div>
-                    <div className="skill-progress">
-                      <div className="progress-bar">
-                        <div 
-                          className="progress-fill" 
-                          style={{ 
-                            width: `${Math.min(skill.years * 20, 100)}%`,
-                            backgroundColor: skill.color
-                          }}
-                        ></div>
-                      </div>
-                      <span className="skill-years">{skill.years} years</span>
-                    </div>
+    <Section id="skills" title="Skills & Technologies" bgColor="dark">
+      <div className="skills-panels-grid">
+        {skillCategories.slice(0, 3).map((category, idx) => (
+          <div key={idx} className="skills-panel">
+            <h3 className="category-title">{category.name}</h3>
+            <div className="skills-grid">
+              {category.skills.map((skill, index) => {
+                const percent = Math.min((skill.years / 7) * 100, 100);
+                return (
+                  <div
+                    key={index}
+                    className="skill-chip"
+                    title={`${skill.name} · ${skill.years} years`}
+                  >
+                    <span className="chip-fill" style={{ ['--fillRatio']: percent / 100 }} />
+                    <span className="chip-label">{skill.name}</span>
+                    <span className="chip-years" aria-hidden>
+                      {skill.years} years
+                    </span>
                   </div>
-                ))}
-              </div>
-            </Col>
-            <Col lg={6}>
-              <div className="skills-column">
-                {category.skills.slice(Math.ceil(category.skills.length / 2)).map((skill, index) => (
-                  <div key={index} className="skill-item">
-                    <div className="skill-header">
-                      <span className="skill-icon" style={{ backgroundColor: skill.color }}>
-                        {skill.icon}
-                      </span>
-                      <span className="skill-name">{skill.name}</span>
-                    </div>
-                    <div className="skill-progress">
-                      <div className="progress-bar">
-                        <div 
-                          className="progress-fill" 
-                          style={{ 
-                            width: `${Math.min(skill.years * 20, 100)}%`,
-                            backgroundColor: skill.color
-                          }}
-                        ></div>
-                      </div>
-                      <span className="skill-years">{skill.years} years</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Col>
-          </Row>
-        </div>
-      ))}
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
     </Section>
   );
 };

@@ -6,6 +6,7 @@ import { Education } from './components/Education';
 import { AboutMe } from './components/AboutMe';
 import { Contact } from './components/Contact';
 import { ProfessionalExperience } from './components/ProfessionalExperience';
+import { ExtracurricularActivities } from './components/ExtracurricularActivities';
 import { TechnicalSkills } from './components/TechnicalSkills';
 import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,6 +18,7 @@ function App() {
       <AboutMe/>
       <Education/>
       <ProfessionalExperience/>
+      <ExtracurricularActivities/>
       <TechnicalSkills/>
       <Projects/>
       <Contact/>

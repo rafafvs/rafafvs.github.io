@@ -858,11 +858,11 @@ span.navbar-text {
 /* New chip-based skills UI */
 .skills-panels-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .skills-panels-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -890,87 +890,31 @@ span.navbar-text {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
 }
 
-/* chips are full-width; no breakpoint changes needed */
-
 .skill-chip {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   background: var(--c5);
   border: 2px solid var(--c1);
   border-radius: 10px;
-  padding: 6px 12px; /* thinner */
-  overflow: hidden;
-  color: var(--c1);
+  padding: 10px 14px;
   font-weight: 600;
-  isolation: isolate; /* ensure fill sits behind text */
-}
-
-.skill-chip .chip-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: calc(var(--fillRatio, 0) * 100%);
-  background: var(--c2);
-  opacity: 0.7;
-  pointer-events: none;
-  transition: width 0.4s ease, opacity 0.2s ease;
-  z-index: 0;
 }
 
 .skill-chip .chip-label {
-  position: relative;
-  z-index: 1;
-  color: var(--c5);
-  font-size: 0.9rem;
+  color: var(--c1);
+  font-size: 1rem;
   line-height: 1.2;
 }
 
-.skill-chip .chip-years {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  color: var(--c1);
-  z-index: 2;
-  font-weight: 700;
-  background: transparent;
-  transition: opacity 0.2s ease;
-}
-
-.skill-chip:hover .chip-label { opacity: 0; }
-.skill-chip:hover .chip-years { opacity: 1; color: #ffffff; }
-.skill-chip:hover .chip-fill { width: 100% !important; opacity: 0.55; }
-
-/* Distinct gradient fills per category panel */
-.skills-panels-grid .skills-panel:nth-child(1) .chip-fill {
-  background: linear-gradient(90deg, var(--c2), var(--c1));
-}
-.skills-panels-grid .skills-panel:nth-child(2) .chip-fill {
-  background: linear-gradient(90deg, var(--c3), var(--c2));
-}
-.skills-panels-grid .skills-panel:nth-child(3) .chip-fill {
-  background: linear-gradient(90deg, var(--c4), var(--c3));
-}
-
-.skill-chip:hover::after {
-  content: attr(title);
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--c1);
-  color: #fff;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 6px;
-  white-space: nowrap;
-  opacity: 0.95;
+.skill-chip .chip-detail {
+  color: var(--c4);
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* Responsive adjustments */

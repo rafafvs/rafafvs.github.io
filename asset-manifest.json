@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.56d3277b.css",
-    "main.js": "/static/js/main.0c76a6b7.js",
-    "static/js/453.22ba67c6.chunk.js": "/static/js/453.22ba67c6.chunk.js",
+    "main.css": "/static/css/main.e310fe22.css",
+    "main.js": "/static/js/main.dea590bb.js",
+    "static/js/453.ffca1605.chunk.js": "/static/js/453.ffca1605.chunk.js",
     "static/media/about-me-img.jpg": "/static/media/about-me-img.ecfe955898bc0bb9998a.jpg",
     "static/media/laptop.png": "/static/media/laptop.f55228dbd2fbc64d541b.png",
     "static/media/voyce.png": "/static/media/voyce.d1b61782f9469f03a6c1.png",
@@ -19,12 +19,12 @@
     "static/media/ist-logo.jpeg": "/static/media/ist-logo.cba1354ceec99a3d2a66.jpeg",
     "static/media/IPFN-logo.jpeg": "/static/media/IPFN-logo.ba3076c85668c0865a4e.jpeg",
     "index.html": "/index.html",
-    "main.56d3277b.css.map": "/static/css/main.56d3277b.css.map",
-    "main.0c76a6b7.js.map": "/static/js/main.0c76a6b7.js.map",
-    "453.22ba67c6.chunk.js.map": "/static/js/453.22ba67c6.chunk.js.map"
+    "main.e310fe22.css.map": "/static/css/main.e310fe22.css.map",
+    "main.dea590bb.js.map": "/static/js/main.dea590bb.js.map",
+    "453.ffca1605.chunk.js.map": "/static/js/453.ffca1605.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56d3277b.css",
-    "static/js/main.0c76a6b7.js"
+    "static/css/main.e310fe22.css",
+    "static/js/main.dea590bb.js"
   ]
 }

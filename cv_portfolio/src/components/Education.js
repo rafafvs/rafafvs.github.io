@@ -71,7 +71,7 @@ export const Education = () => {
                         </div>
                     </div>
                     <p className="text-muted fs-5">
-                    Currently pursuing a double degree at Europe's leading business school to bridge my technical engineering background with advanced financial theory. My focus is on the Capital Markets specialization, where I am rigorously applying quantitative methods to asset management and trading strategies. This program allows me to translate complex mathematical models into actionable market insights, validated by a top-percentile GMAT performance.
+                    Currently pursuing a double degree at one of Europe's leading business schools. During this degree I hope to further explore an excited field where I can combine everything I have learned so far, both technical skills and intuition and work on practical problems.  My focus is on the Capital Markets specialization, where I look forward to learn from leading researchers and practitioners in the fields of Quantitative Finance, Risk Management, and Algorithmic Trading unsing Machine Learning and AI.
                     </p>
                     <div className="skills-section">
                         <div className="courses-title">
@@ -107,7 +107,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              At France’s premier engineering institution, I deepened my expertise in applied mathematics and computer science. My coursework centered on the intersection of optimization and deep learning, specifically tailored for financial applications. Here, I honed my ability to handle the numerical processing of large-scale financial datasets, building the technical architecture necessary for developing robust pricing and hedging models.
+              The first year of the double degree I am currently persuing was at one of France’s leading engineering institution. There I strengthened my knowledge in applied mathematics and computer science. My coursework centered on the intersection of optimization and deep learning, specifically tailored for financial applications. Here, I honed my ability to handle the numerical processing of large-scale financial datasets, building the technical architecture necessary for developing robust pricing and hedging models.
               </p>
               <div className="skills-section">
                   <div className="courses-title">
@@ -260,7 +260,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              Growing up in this immersive multicultural environment laid the early groundwork for my international career. I pursued the European Baccalaureate with a specific concentration on advanced Mathematics and Physics, cultivating the analytical logic that underpins my engineering degrees. Beyond the sciences, this education cemented my multilingual capabilities, giving me the adaptability and cross-cultural fluency essential for navigating global financial hubs.
+              Growing up in Brussels, I attended the European School of Brussels II. I persued the European Baccalaureate with a specialization in advanced mathematics and physics, fostering my curiosity for the hard sciences, and paving the way for me to persue a degree in Engineering Physics. Beyond the sciences, the school allows for students to explore many different languages. Beeing aware of the opportunities learning other languages can offer, I decided to learn 2 other (on top of the native Portuguese and French) - English and later Dutch. Besides the rigorous education the school provided, I am mostly grateful for the exposure it gave me to other cultures and people.
               </p>
               <div className="skills-section">
                   <div className="courses-title">

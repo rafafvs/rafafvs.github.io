@@ -19,7 +19,7 @@ export const projects = [
     name: "Bicycle Traffic Forecasting",
     description: "Predictive analytics tool for Paris bicycle traffic utilizing gradient boosting and ensemble methods on public data.",
     technologies: ["Python", "Gradient Boosting", "Ensemble"],
-    githubUrl: "https://github.com/rafafvs/",
+    githubUrl: "https://github.com/rafafvs/bike_counter_prediction.git",
     screenshot: "🤖",
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   },
@@ -43,7 +43,7 @@ export const projects = [
     name: "Plasmon Instability Modelling",
     description: "C++ simulation framework extended to model plasmon instabilities in dual-gated field-effect transistors.",
     technologies: ["C++", "THETHYS", "Plasmon Instabilities", "Dual-gated field-effect transistors"],
-    githubUrl: "https://github.com/rafafvs/",
+    githubUrl: "https://github.com/rafafvs/Plasmon_Instability_Simulation.git",
     screenshot: "📈",
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   },
@@ -51,7 +51,7 @@ export const projects = [
     name: "Video Poker Game Engine",
     description: "Object-oriented Java game application featuring an automated perfect-strategy algorithm and debug modes.",
     technologies: ["Java", "Object-oriented Programming", "Perfect Strategy Algorithm", "Debug Modes"],
-    githubUrl: "https://github.com/rafafvs/",
+    githubUrl: "https://github.com/rafafvs/VideoPoker.git",
     screenshot: "🔗",
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   }

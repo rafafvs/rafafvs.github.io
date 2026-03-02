@@ -24,36 +24,38 @@ export const AboutMe = () => {
                 </Col>
                 <Col xs={12} md={6} xl={7}>
                     <div className="about-text">
-                        <span className="tagline">A little about me!</span>
+                        <span className="tagline">Welcome to my website!</span>
                         <h1>
-                            {`Hi! I'm Rafael`}{" "}
+                            {`Hi! I'm Rafael,`}{" "}
                             <span
                                 className="txt-rotate"
                                 dataPeriod="1000"
-                                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                                data-rotate='[ "Physicist", "Data Scientist", "Just a Chill Guy"]'
                             >
                                 <span className="wrap"></span>
                             </span>
                         </h1>
                         <p>
-                            I'm Rafael Valente, a quantitative finance professional with a unique blend of engineering physics, data
-                            science, and financial markets expertise. Currently pursuing a double degree in International Finance at HEC
-                            Paris and Data Science & AI for Business at École Polytechnique, I combine rigorous technical training with
-                            practical experience in quantitative asset management.
+                            I'm a physicist turned data scientist, with a background spanning Nuclear Fusion research at Instituto Superior Técnico and a double degree from École Polytechnique and HEC Paris.
                         </p>
                         <p>
-                            My background in engineering physics from Instituto Superior Técnico has equipped me with strong analytical
-                            and problem-solving skills, which I've applied to everything from fusion plasma research to developing
-                            automated data pipelines at Capital Fund Management, a leading quant asset manager. I'm passionate about
-                            leveraging machine learning and quantitative methods to solve complex problems in finance—from option
-                            pricing with neural networks to building deep hedging strategies.
+                            I started in physics because I wanted to understand and model how things work at a fundamental level. I'm fascinated by the idea that almost everything can be understood through equations and data, which has led me to acquire as much data as possible on everything I can and test my beliefs.
                         </p>
                         <p>
-                            Beyond my technical pursuits, I'm committed to making a positive impact through climate policy work with
-                            VOYCE and community service. When I'm not coding or analyzing data, you'll find me kitesurfing, scuba
-                            diving, or behind a camera capturing moments.
+                            I've always learned best by doing — whether that's a personal project or just working through a problem until I understand it properly. That habit has shaped most of what I know and how I deal with new challenges.
                         </p>
-                        <p>I'm always eager to explore new challenges at the intersection of technology, data, and finance.</p>
+                        <p>
+                            During my master program, in search of new perspectives, I decided to move to India for six months. That period taught to focus on what I can actually control and how to stay clear-headed under uncertainty and stress — useful skills that I carry into how I work.
+                        </p>
+                        <p>
+                            After finishing my masters at IST, rather than going straight into a PhD, I sought to gain hands-on experience working in the industry, which led me to join Capital Fund Management (CFM), where I worked on the automation of data pipelines and improvement of compliance and risk monitoring processes.
+                        </p>
+                        <p>
+                            Besides some programming languages, I speak French, Portuguese and English fluently, with Italian close behind. I've volunteered at food banks and contribute to climate policy work through VOYCE's Climate Change Commission. I take seriously the question of what my work is actually for.
+                        </p>
+                        <p>
+                            Ultimately, I'm looking for environments where rigorous thinking is valued, where there are hard problems worth solving, and where I can keep getting better at what I do.
+                        </p>
                     </div>
                 </Col>
             </Row>
@@ -69,18 +71,10 @@ export const AboutMe = () => {
                                 <div
                                     key={project.name}
                                     className={`featured-project-card ${project.placeholder ? "placeholder" : ""}`}
-                                    style={
-                                        !project.placeholder && project.backgroundImage
-                                            ? { backgroundImage: `url(${project.backgroundImage})` }
-                                            : undefined
-                                    }
                                 >
                                     <div className="featured-project-body">
                                         <div className="featured-project-meta">
                                             <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
-                                            {!project.placeholder && (
-                                                <span className="featured-project-icon">{project.screenshot}</span>
-                                            )}
                                         </div>
                                         <h4>{project.name}</h4>
                                         <p>{project.description}</p>

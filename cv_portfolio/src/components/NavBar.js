@@ -11,55 +11,33 @@ export const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    let sectionPositions = [];
-
-    const collectSectionPositions = () => {
-      sectionPositions = SECTION_IDS.map((id) => {
-        const element = document.getElementById(id);
-        return element
-          ? { id, offsetTop: element.offsetTop }
-          : null;
-      })
-        .filter(Boolean)
-        .sort((a, b) => a.offsetTop - b.offsetTop);
-    };
-
     const updateActiveSection = () => {
       const hasScrolled = window.scrollY > 50;
       setScrolled((prev) => (prev === hasScrolled ? prev : hasScrolled));
-
-      if (!sectionPositions.length) {
-        collectSectionPositions();
-      }
-
-      const referencePoint = window.scrollY + 140;
+  
       let currentSection = SECTION_IDS[0];
-
-      for (const section of sectionPositions) {
-        if (referencePoint >= section.offsetTop) {
-          currentSection = section.id;
+  
+      for (const id of SECTION_IDS) {
+        const element = document.getElementById(id);
+        if (!element) continue;
+        if (element.getBoundingClientRect().top <= 1) {
+          currentSection = id;
         } else {
           break;
         }
       }
-
+  
       setActiveLink((prev) => (prev === currentSection ? prev : currentSection));
     };
-
-    const handleResize = () => {
-      collectSectionPositions();
-      updateActiveSection();
-    };
-
-    collectSectionPositions();
-    updateActiveSection();
-
+  
+    // Defer initial call so layout is settled after font-size scaling
+    const timer = setTimeout(updateActiveSection, 100);
+  
     window.addEventListener('scroll', updateActiveSection, { passive: true });
-    window.addEventListener('resize', handleResize);
-
+  
     return () => {
       window.removeEventListener('scroll', updateActiveSection);
-      window.removeEventListener('resize', handleResize);
+      clearTimeout(timer);
     };
   }, []);
 

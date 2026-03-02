@@ -45,7 +45,7 @@ export const TechnicalSkills = () => {
       name: "Interests",
       skills: [
         { name: "Kitesurfing", detail: "IKO independent level" },
-        { name: "Scuba Diving", detail: "3 sites explored" },
+        { name: "Scuba Diving", detail: "Certified N1 Diver (20m)" },
         { name: "Photography", detail: "7 years of practice" },
         { name: "Football", detail: "10 years" }
       ]

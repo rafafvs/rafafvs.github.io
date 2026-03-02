@@ -72,7 +72,7 @@ export const ProfessionalExperience = () => {
                         Key Achievements
                     </div>
                     <p className="text-muted fs-5">
-                    At a +$20Bn Quantitative Asset Manager, I worked at the intersection of software engineering and data operations. My primary focus was hardening the firm's internal monitoring infrastructure by migrating legacy SQL controls into modular, automated Python pipelines. I addressed the critical challenge of data integrity by curating datasets to resolve missing values and ensuring coherence across sources—a vital step for accurate financial modeling. Additionally, I engineered interactive visualization tools to accelerate management decision-making and reverse-engineered processes to meet new operational risk requirements.                    </p>
+                    At a +$20Bn Quantitative Asset Manager, my worked combined software engineering and data operations. My primary focus was strengthening the firm's internal monitoring infrastructure by migrating legacy SQL controls into modular, automated Python pipelines. I addressed the critical challenge of data integrity by curating datasets and ensuring coherence across sources. Additionally, I engineered interactive visualization tools to accelerate management decision-making and reverse-engineered processes to meet new operational risk requirements.                    </p>
                     <div className="skills-section">
                         <div className="skills-title">
                             <i className="fas fa-code"></i>
@@ -117,7 +117,7 @@ export const ProfessionalExperience = () => {
                   Key Achievements
               </div>
               <p className="text-muted fs-5">
-              Financed by a Eurofusion research grant, my work here mirrored the workflow of quantitative research: extracting signal from noise. I designed an iterative fitting method to clean and calibrate raw experimental data, ensuring reliability for downstream analysis. I also developed algorithmic approaches to detect and characterize vibration modes within time-series data from fusion experiments. This role honed my ability to apply statistical and signal processing techniques to complex, non-linear datasets to identify trends and correlations.
+              Financed by a Eurofusion research grant, my work mirrored the workflow of quantitative research: extracting signal from noise. I designed an iterative fitting method to clean and calibrate raw experimental data, ensuring reliability for downstream analysis. I also developed algorithmic approaches to detect and characterize vibration modes within time-series data from fusion experiments. This role honed my ability to apply processing techniques to complex, non-linear datasets to identify trends and correlations.
               </p>
               <div className="skills-section">
                   <div className="skills-title">
@@ -126,11 +126,10 @@ export const ProfessionalExperience = () => {
                   </div>
                   <div className="skills-container">
                       <span className="skill-tag">Applied Physics Research</span>
-                      <span className="skill-tag">Simulation</span>
                       <span className="skill-tag">Time-Series Analysis</span>
-                      <span className="skill-tag">Signal Processing</span>
-                      <span className="skill-tag">Statistical Modeling</span>
-                      <span className="skill-tag">Algorithm Design</span>
+                      <span className="skill-tag">Data Processing</span>
+                      <span className="skill-tag">Data Visualization</span>
+                      <span className="skill-tag">Algorithm Development</span>
                   </div>
               </div>
             </div>

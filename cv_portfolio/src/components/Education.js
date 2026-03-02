@@ -71,7 +71,7 @@ export const Education = () => {
                         </div>
                     </div>
                     <p className="text-muted fs-5">
-                    Currently pursuing a double degree at one of Europe's leading business schools. During this degree I hope to further explore an excited field where I can combine everything I have learned so far, both technical skills and intuition and work on practical problems.  My focus is on the Capital Markets specialization, where I look forward to learn from leading researchers and practitioners in the fields of Quantitative Finance, Risk Management, and Algorithmic Trading unsing Machine Learning and AI.
+                    Currently pursuing a double degree at one of Europe's leading business schools. During this degree I hope to further explore an exciting field where I can combine everything I have learned so far, both technical skills and intuition and work on practical problems.  My focus is on the Capital Markets specialization, where I look forward to learn from leading researchers and practitioners in the fields of Quantitative Finance, Risk Management, and Algorithmic Trading unsing Machine Learning and AI.
                     </p>
                     <div className="skills-section">
                         <div className="courses-title">
@@ -80,9 +80,10 @@ export const Education = () => {
                         </div>
                         <div className="courses-container">
                             <div className="course-item">Quant Asset Management</div>
-                            <div className="course-item">Algorithms</div>
-                            <div className="course-item">Data & Trading</div>
+                            <div className="course-item">Financial Engineering</div>
+                            <div className="course-item">Algorithms, Data & Trading</div>
                             <div className="course-item">AI for Quant Trading Strategies</div>
+                            <div className="course-item">Exotic Products and Structuring</div>
                         </div>
                     </div>
                 </div>
@@ -107,7 +108,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              The first year of the double degree I am currently persuing was at one of France’s leading engineering institution. There I strengthened my knowledge in applied mathematics and computer science. My coursework centered on the intersection of optimization and deep learning, specifically tailored for financial applications. Here, I honed my ability to handle the numerical processing of large-scale financial datasets, building the technical architecture necessary for developing robust pricing and hedging models.
+              The first year of the double degree I am currently persuing was at one of France’s leading engineering institution. There I strengthened my knowledge in applied mathematics, statistics and computer science. My coursework centered on combining mathematical rigour with practical applications of machine learning and deep learning, specifically tailored for financial markets. During this yearr, I honed my ability to handle the numerical processing of large-scale financial datasets, and experimented with building models necessary for developing robust pricing and hedging models.
               </p>
               <div className="skills-section">
                   <div className="courses-title">
@@ -118,6 +119,7 @@ export const Education = () => {
                       <div className="course-item">Optimization</div>
                       <div className="course-item">Deep Learning in Finance</div>
                       <div className="course-item">Numerical Processing of Financial Data</div>
+                      <div className="course-item">Machine Learning</div>
                   </div>
               </div>
             </div>
@@ -142,7 +144,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              I spent a semester immersed in one of India's most competitive academic environments to broaden my technical perspective. This experience not only exposed me to different teaching methodologies in physics and engineering but also demonstrated my adaptability and eagerness to tackle challenges in diverse global settings.              
+              I spent a semester immersed in one of India's most competitive academic environments to broaden my technical and personal perspectives. This experience exposed me to different teaching methodologies in physics and engineering but also demonstrated my adaptability and curiosity for tackling challenges in diverse global settings.          
               </p>
               <div className="skills-section">
                   <div className="courses-title">
@@ -180,7 +182,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              Specializing in Engineering Physics provided me with a sophisticated toolkit for modeling complex physical systems—skills I now transpose to financial markets. I graduated with a high GPA (17/20), culminating in a thesis on Edge Instabilities in fusion plasmas. This research was particularly relevant to quantitative finance as it required heavy signal processing, time-series analysis, and the statistical cleaning of noisy experimental data.
+              Specializing in Engineering Physics provided me with a sophisticated toolkit for modeling complex physical systems. My degree culminated in a thesis on Edge Instabilities in fusion plasmas. This research required heavy signal processing, time-series analysis, and the statistical cleaning of noisy experimental data.
               </p>
               <div className="skills-section">
                   <div className="courses-title">
@@ -221,7 +223,7 @@ export const Education = () => {
                   </div>
               </div>
               <p className="text-muted fs-5">
-              This rigorous undergraduate program served as the foundation of my analytical capabilities. It was here that I developed strong proficiency in Object-Oriented Programming and advanced mathematical methods. The curriculum demanded a high level of abstraction and problem-solving, teaching me to approach volatile systems through a lens of computational logic and structured code—a mindset essential for algorithmic trading.
+              This rigorous undergraduate program served as the foundation of my analytical capabilities. It was here that I developed strong proficiency in Object-Oriented Programming and advanced mathematical methods. The curriculum demanded a high level of abstraction and problem-solving.
               </p>
               <div className="skills-section">
                   <div className="courses-title">
@@ -232,6 +234,8 @@ export const Education = () => {
                       <div className="course-item">Mathematical Methods for Physics</div>
                       <div className="course-item">Object Oriented Programming</div>
                       <div className="course-item">Computational Physics</div>
+                      <div className="course-item">Quantum Mechanics</div>
+                      <div className="course-item">Statistical Physics</div>
                   </div>
               </div>
             </div>

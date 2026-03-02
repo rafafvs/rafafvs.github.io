@@ -73,7 +73,7 @@ export const ExtracurricularActivities = () => {
                 Key Achievements
               </div>
               <p className="text-muted fs-5">
-                As part of a specialized think-tank, I contribute to reports that map urban sustainability plans across the European Union. My role involves benchmarking these plans to support evidence-based policy proposals. This experience allows me to apply analytical rigor to macro-level ESG (Environmental, Social, and Governance) topics, a growing sector within modern finance.
+              As part of a specialized think-tank, I contribute to writing articles and reports on various topics related to sustainability and climate change with a particular focus on the European Union, but also global issues. My role includes acquiring data and benchmarking policies to access their effectiveness and support other policy proposals. 
               </p>
               <div className="skills-section">
                 <div className="skills-title">
@@ -82,11 +82,10 @@ export const ExtracurricularActivities = () => {
                 </div>
                 <div className="skills-container">
                   <span className="skill-tag">Policy Analysis</span>
-                  <span className="skill-tag">ESG</span>
                   <span className="skill-tag">Research</span>
                   <span className="skill-tag">Data Benchmarking</span>
                   <span className="skill-tag">Sustainability</span>
-                  <span className="skill-tag">Strategic Thinking</span>
+                  <span className="skill-tag">Climate Change</span>
                 </div>
               </div>
             </div>
@@ -119,7 +118,7 @@ export const ExtracurricularActivities = () => {
                 Key Achievements
               </div>
               <p className="text-muted fs-5">
-              While volunteering at a local distribution center serving 35 families weekly, I moved beyond operational support to take on coordination responsibilities. I oversaw the logistics of the distribution and sanitation teams, ensuring efficient workflows in a high-pressure, time-sensitive environment. This experience reinforced my ability to lead small teams and manage operations effectively.
+              While volunteering at a local distribution center serving 35 families weekly, I took on coordination responsibilities. I oversaw the logistics of the distribution and sanitation teams, ensuring efficient workflows in a time-sensitive environment.
               </p>
               <div className="skills-section">
                 <div className="skills-title">
@@ -129,9 +128,7 @@ export const ExtracurricularActivities = () => {
                 <div className="skills-container">
                   <span className="skill-tag">Leadership</span>
                   <span className="skill-tag">Communication</span>
-                  <span className="skill-tag">Organization</span>
                   <span className="skill-tag">Teamwork</span>
-                  <span className="skill-tag">Project Management</span>
                   <span className="skill-tag">Social Impact</span>
                 </div>
               </div>
@@ -165,7 +162,7 @@ export const ExtracurricularActivities = () => {
                 Key Achievements
               </div>
               <p className="text-muted fs-5">
-              During the university's "Physics Week," I was responsible for presenting complex physical concepts to a diverse audience ranging from young students to adults. The core challenge was adaptability; I had to dynamically adjust the complexity of my explanations to match the technical knowledge level of each specific group. This experience sharpened my ability to communicate technical concepts to non-specialist stakeholders—a crucial skill for bridging the gap between quant teams and business units.
+              During the university's "Physics Week," I was responsible for presenting complex physical concepts to a diverse audience ranging from young students to adults. The core challenge was adaptability; I had to dynamically adjust the complexity of my explanations to match the technical knowledge level of each specific group. This experience sharpened my ability to communicate technical concepts to non-specialist stakeholders.
               </p>
               <div className="skills-section">
                 <div className="skills-title">

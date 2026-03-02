@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cca08c3.css",
-    "main.js": "/static/js/main.d6f6024c.js",
+    "main.css": "/static/css/main.6036f575.css",
+    "main.js": "/static/js/main.015c7bdd.js",
     "static/js/453.88e1adce.chunk.js": "/static/js/453.88e1adce.chunk.js",
     "static/media/about-me-img.jpg": "/static/media/about-me-img.ecfe955898bc0bb9998a.jpg",
     "static/media/laptop.png": "/static/media/laptop.f55228dbd2fbc64d541b.png",
     "static/media/voyce.png": "/static/media/voyce.d1b61782f9469f03a6c1.png",
     "static/media/nfist-logo.png": "/static/media/nfist-logo.7b662d27304f56b9dcc8.png",
-    "static/media/RafaelValenteCV.pdf": "/static/media/RafaelValenteCV.e90b9aee663f7a0a02e0.pdf",
+    "static/media/RafaelValenteCV.pdf": "/static/media/RafaelValenteCV.3af59ea02c9af6b04aba.pdf",
     "static/media/x-logo.png": "/static/media/x-logo.b288bd676d40d0c5f5a2.png",
     "static/media/eeb2-logo.jpg": "/static/media/eeb2-logo.c6940809798a3aff55a3.jpg",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -19,12 +19,12 @@
     "static/media/ist-logo.jpeg": "/static/media/ist-logo.cba1354ceec99a3d2a66.jpeg",
     "static/media/IPFN-logo.jpeg": "/static/media/IPFN-logo.ba3076c85668c0865a4e.jpeg",
     "index.html": "/index.html",
-    "main.0cca08c3.css.map": "/static/css/main.0cca08c3.css.map",
-    "main.d6f6024c.js.map": "/static/js/main.d6f6024c.js.map",
+    "main.6036f575.css.map": "/static/css/main.6036f575.css.map",
+    "main.015c7bdd.js.map": "/static/js/main.015c7bdd.js.map",
     "453.88e1adce.chunk.js.map": "/static/js/453.88e1adce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cca08c3.css",
-    "static/js/main.d6f6024c.js"
+    "static/css/main.6036f575.css",
+    "static/js/main.015c7bdd.js"
   ]
 }

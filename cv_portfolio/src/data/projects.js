@@ -24,11 +24,27 @@ export const projects = [
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   },
   {
-    name: "Spanish-English Translation",
-    description: "Character-level sequence-to-sequence neural network designed for automated Spanish-to-English translation.",
-    technologies: ["Python", "TensorFlow", "Keras", "Natural Language Processing (NLP)"],
-    githubUrl: "https://github.com/rafafvs/Translator_EnglishSpanish.git",
-    screenshot: "🌎",
+    name: "Building a Trading Strategy",
+    description: "Built a trading strategy using machine learning and statistical methods to predict the direction of the market.",
+    githubUrl: "https://github.com/p-haas/AI_QTS_final_project.git",
+    technologies: ["Python", "Gradient Boosting", "Ensemble", "Time Series", "Feature Engineering"],
+    screenshot: "🤖",
+    backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "Video Poker Game Engine",
+    description: "Object-oriented Java game application featuring an automated perfect-strategy algorithm and debug modes.",
+    technologies: ["Java", "Object-oriented Programming", "Perfect Strategy Algorithm", "Debug Modes"],
+    githubUrl: "https://github.com/rafafvs/VideoPoker.git",
+    screenshot: "🎰",
+    backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    name: "Personal Website",
+    description: "Personal website built with React, Bootstrap, and GitHub Pages to showcase my projects and skills.",
+    technologies: ["React", "Bootstrap", "GitHub Pages"],
+    githubUrl: "https://github.com/rafafvs/rafafvs.github.io.git",
+    screenshot: "🌐",
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   },
   {
@@ -47,21 +63,4 @@ export const projects = [
     screenshot: "💿",
     backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
   },
-  {
-    name: "Video Poker Game Engine",
-    description: "Object-oriented Java game application featuring an automated perfect-strategy algorithm and debug modes.",
-    technologies: ["Java", "Object-oriented Programming", "Perfect Strategy Algorithm", "Debug Modes"],
-    githubUrl: "https://github.com/rafafvs/VideoPoker.git",
-    screenshot: "🎰",
-    backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    name: "Personal Website",
-    description: "Personal website built with React, Bootstrap, and GitHub Pages to showcase my projects and skills.",
-    technologies: ["React", "Bootstrap", "GitHub Pages"],
-    githubUrl: "https://github.com/rafafvs/rafafvs.github.io.git",
-    screenshot: "🌐",
-    backgroundImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
-  }
 ];
-

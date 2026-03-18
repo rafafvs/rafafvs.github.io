@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6036f575.css",
-    "main.js": "/static/js/main.015c7bdd.js",
+    "main.js": "/static/js/main.5f06ff85.js",
     "static/js/453.88e1adce.chunk.js": "/static/js/453.88e1adce.chunk.js",
     "static/media/about-me-img.jpg": "/static/media/about-me-img.ecfe955898bc0bb9998a.jpg",
     "static/media/laptop.png": "/static/media/laptop.f55228dbd2fbc64d541b.png",
@@ -20,11 +20,11 @@
     "static/media/IPFN-logo.jpeg": "/static/media/IPFN-logo.ba3076c85668c0865a4e.jpeg",
     "index.html": "/index.html",
     "main.6036f575.css.map": "/static/css/main.6036f575.css.map",
-    "main.015c7bdd.js.map": "/static/js/main.015c7bdd.js.map",
+    "main.5f06ff85.js.map": "/static/js/main.5f06ff85.js.map",
     "453.88e1adce.chunk.js.map": "/static/js/453.88e1adce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6036f575.css",
-    "static/js/main.015c7bdd.js"
+    "static/js/main.5f06ff85.js"
   ]
 }

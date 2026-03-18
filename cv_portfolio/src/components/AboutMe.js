@@ -45,7 +45,7 @@ export const AboutMe = () => {
                             I've always learned best by doing — whether that's a personal project or just working through a problem until I understand it properly. That habit has shaped most of what I know and how I deal with new challenges.
                         </p>
                         <p>
-                            During my master program, in search of new perspectives, I decided to move to India for six months. That period taught to focus on what I can actually control and how to stay clear-headed under uncertainty and stress — useful skills that I carry into how I work.
+                            During my master program, in search of new perspectives, I decided to move to India for six months. That period taught me to focus on what I can actually control and how to stay clear-headed under uncertainty and stress — useful skills that I carry into how I work.
                         </p>
                         <p>
                             After finishing my masters at IST, rather than going straight into a PhD, I sought to gain hands-on experience working in the industry, which led me to join Capital Fund Management (CFM), where I worked on the automation of data pipelines and improvement of compliance and risk monitoring processes.
